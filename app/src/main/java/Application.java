@@ -1,3 +1,6 @@
+import external.db.builder.BuilderPropertiesDBConnection;
+import external.db.builder.ManagerDBConnection;
+
 /**
  * Estudo do acesso a dados através da API
  * JDBC.
@@ -8,6 +11,8 @@
  */
 public class Application {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        ManagerDBConnection.builderDBConnection(new BuilderPropertiesDBConnection());
+        ManagerDBConnection.singletonConnection();
+        ManagerDBConnection.closeSingletonConnection();
     }
 }
