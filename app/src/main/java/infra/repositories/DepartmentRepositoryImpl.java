@@ -21,4 +21,9 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
                 .map(model -> new Department(model.getId(), model.getName()))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public Department getById(int id) {
+        return null;
+    }
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface DepartmentRepository {
     List<Department> getAll();
+
+    Department getById(int id);
 }
