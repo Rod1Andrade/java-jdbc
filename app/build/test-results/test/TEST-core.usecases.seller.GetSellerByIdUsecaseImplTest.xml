@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="core.usecases.seller.GetSellerByIdUsecaseImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-17T11:43:32" hostname="DESKTOP-15CSJ6A" time="0.451">
+  <properties/>
+  <testcase name="getSellerByIdTest()" classname="core.usecases.seller.GetSellerByIdUsecaseImplTest" time="0.451"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
