@@ -2,8 +2,8 @@ package external.facades;
 
 import core.entities.Seller;
 import core.repositories.SellerRepository;
-import core.usecases.CreateSellerUsecase;
-import core.usecases.CreateSellerUsecaseImpl;
+import core.usecases.seller.CreateSellerUsecase;
+import core.usecases.seller.CreateSellerUsecaseImpl;
 import external.drivers.SellerDBDriver;
 import infra.drivers.SellerDriver;
 import infra.repositories.SellerRepositoryImpl;

@@ -1,4 +1,4 @@
-package core.usecases;
+package core.usecases.seller;
 
 import core.entities.Seller;
 import core.repositories.SellerRepository;

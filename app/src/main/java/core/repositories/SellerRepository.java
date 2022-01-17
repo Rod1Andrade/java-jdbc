@@ -1,7 +1,6 @@
 package core.repositories;
 
 import core.entities.Seller;
-import infra.models.SellerModel;
 
 import java.util.List;
 

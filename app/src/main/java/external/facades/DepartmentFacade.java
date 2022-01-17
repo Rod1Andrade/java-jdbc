@@ -2,10 +2,10 @@ package external.facades;
 
 import core.entities.Department;
 import core.repositories.DepartmentRepository;
-import core.usecases.GetAllDepartmentUsecase;
-import core.usecases.GetAllDepartmentUsecaseImpl;
-import core.usecases.GetDepartmentByIdUsecase;
-import core.usecases.GetDepartmentByIdUsecaseImpl;
+import core.usecases.department.GetAllDepartmentUsecase;
+import core.usecases.department.GetAllDepartmentUsecaseImpl;
+import core.usecases.department.GetDepartmentByIdUsecase;
+import core.usecases.department.GetDepartmentByIdUsecaseImpl;
 import external.drivers.DepartmentDBDriver;
 import infra.drivers.DepartmentDriver;
 import infra.repositories.DepartmentRepositoryImpl;

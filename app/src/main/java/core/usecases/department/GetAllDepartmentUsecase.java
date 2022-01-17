@@ -1,4 +1,4 @@
-package core.usecases;
+package core.usecases.department;
 
 import core.entities.Department;
 

@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE - DepartmentDBDriver implemented all interface contracts">
+    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE -Department, Seller repositories contracts and implementation.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerByIdUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerByIdUsecaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerUsecaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetAllSellerUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetAllSellerUsecaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetSellerByIdUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetSellerByIdUsecaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/repositories/SellerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/repositories/SellerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/models/SellerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/models/SellerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/repositories/SellerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/repositories/SellerRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642415715115</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="UPDATE -Department, Seller repositories contracts and implementation.">
+      <created>1642416283623</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642416283623</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +157,7 @@
     <MESSAGE value="UPDATE - SellerDBDriver implemented all interface contracts." />
     <MESSAGE value="REFACTORING/CODE-STYLE - DepartmentDBDriver refactoring return way" />
     <MESSAGE value="UPDATE - DepartmentDBDriver implemented all interface contracts" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - DepartmentDBDriver implemented all interface contracts" />
+    <MESSAGE value="UPDATE -Department, Seller repositories contracts and implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE -Department, Seller repositories contracts and implementation." />
   </component>
 </project>
