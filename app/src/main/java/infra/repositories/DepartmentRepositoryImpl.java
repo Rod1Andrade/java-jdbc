@@ -3,6 +3,7 @@ package infra.repositories;
 import core.entities.Department;
 import core.repositories.DepartmentRepository;
 import infra.drivers.DepartmentDriver;
+import infra.models.DepartmentModel;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,5 +26,10 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
     @Override
     public Department getById(int id) {
         return driver.getById(id);
+    }
+
+    @Override
+    public int save(Department department) {
+        return driver.save(DepartmentModel.cast(department));
     }
 }

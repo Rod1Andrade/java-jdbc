@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE - Drivers Interfaces">
+    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE - Save Department">
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/CreateDepartmentUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/CreateDepartmentUsecaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/entities/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/external/drivers/DepartmentDBDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/drivers/DepartmentDBDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/external/facades/DepartmentFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/facades/DepartmentFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="UPDATE - Drivers Interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - Drivers Interfaces" />
+    <MESSAGE value="UPDATE - Save Department" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - Save Department" />
   </component>
 </project>

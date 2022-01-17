@@ -18,7 +18,20 @@ public class DepartmentDBDriver implements DepartmentDriver {
 
     @Override
     public int save(DepartmentModel departmentModel) {
-        return 0;
+        String sql = "INSERT INTO public.department (name) VALUES (?)";
+
+        try (PreparedStatement pst = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            pst.setString(1, departmentModel.getName());
+
+            if (pst.executeUpdate() > 0) {
+                ResultSet rs = pst.getGeneratedKeys();
+                if (rs.next()) return rs.getInt(1);
+            }
+
+            return 0;
+        } catch (SQLException e) {
+            throw new DriverException(": " + e.getMessage());
+        }
     }
 
     @Override
@@ -48,7 +61,7 @@ public class DepartmentDBDriver implements DepartmentDriver {
         String sql = "SELECT * FROM public.department WHERE id = ?";
         DepartmentModel departmentModel = null;
         try (
-                PreparedStatement pst = connection.prepareStatement(sql);
+                PreparedStatement pst = connection.prepareStatement(sql)
         ) {
             pst.setInt(1, id);
             ResultSet rs = pst.executeQuery();
