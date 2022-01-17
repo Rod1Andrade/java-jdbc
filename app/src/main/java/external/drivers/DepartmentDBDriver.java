@@ -20,6 +20,11 @@ public class DepartmentDBDriver implements DepartmentDriver {
     }
 
     @Override
+    public int save(DepartmentModel departmentModel) {
+        return 0;
+    }
+
+    @Override
     public List<DepartmentModel> getAll() {
         String sql = "SELECT * FROM public.department";
         List<DepartmentModel> departmentModels = new ArrayList<>();
@@ -39,5 +44,20 @@ public class DepartmentDBDriver implements DepartmentDriver {
         } catch (SQLException e) {
             throw new DriverException("Impossibel recuperar os dados atraves desse Driver: " + e.getMessage());
         }
+    }
+
+    @Override
+    public DepartmentModel getById(int id) {
+        return null;
+    }
+
+    @Override
+    public void deleteById(int id) {
+
+    }
+
+    @Override
+    public void delete(DepartmentModel departmentModel) {
+
     }
 }

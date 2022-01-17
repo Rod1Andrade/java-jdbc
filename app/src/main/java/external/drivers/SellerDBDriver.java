@@ -5,6 +5,7 @@ import infra.drivers.SellerDriver;
 import infra.models.SellerModel;
 
 import java.sql.*;
+import java.util.List;
 
 public class SellerDBDriver implements SellerDriver {
     private final Connection connection;
@@ -35,5 +36,25 @@ public class SellerDBDriver implements SellerDriver {
         } catch (SQLException e) {
             throw new DriverException("Impossível Cadastrar Seller: " + e.getMessage());
         }
+    }
+
+    @Override
+    public List<SellerModel> getAll() {
+        return null;
+    }
+
+    @Override
+    public SellerModel getById(int id) {
+        return null;
+    }
+
+    @Override
+    public void deleteById(int id) {
+
+    }
+
+    @Override
+    public void delete(SellerModel sellerModel) {
+
     }
 }
