@@ -30,22 +30,7 @@ public class Application {
 
         DepartmentFacade departmentFacade = DepartmentFacade.getInstance(connection);
 
-        List<Department> departments = departmentFacade.getAll();
-        System.out.println(Arrays.toString(departments.toArray()));
-
-        SellerFacade sellerFacade = SellerFacade.getInstance(connection);
-
-        int id = sellerFacade.createSeller(
-                new Seller(
-                        "Rodrigo Andrade",
-                        "rod1.andrade@email.com",
-                        simpleDateFormat.parse("15/07/1999"),
-                        2500.0,
-                        departments.get(0)
-                )
-        );
-
-        System.out.println("Seller id: " + id);
+        System.out.println(departmentFacade.getDeparmentById(1));
 
         ManagerDBConnection.closeSingletonConnection();
     }

@@ -24,6 +24,6 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
 
     @Override
     public Department getById(int id) {
-        return null;
+        return driver.getById(id);
     }
 }

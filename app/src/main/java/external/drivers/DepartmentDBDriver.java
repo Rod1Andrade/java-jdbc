@@ -4,10 +4,7 @@ import external.exceptions.DriverException;
 import infra.drivers.DepartmentDriver;
 import infra.models.DepartmentModel;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +45,21 @@ public class DepartmentDBDriver implements DepartmentDriver {
 
     @Override
     public DepartmentModel getById(int id) {
-        return null;
+        String sql = "SELECT * FROM public.department WHERE id = ?";
+        DepartmentModel departmentModel = null;
+        try (
+                PreparedStatement pst = connection.prepareStatement(sql);
+        ) {
+            pst.setInt(1, id);
+            ResultSet rs = pst.executeQuery();
+
+            if (rs.next())
+                departmentModel = new DepartmentModel(rs.getInt("id"), rs.getString("name"));
+
+            return departmentModel;
+        } catch (SQLException e) {
+            throw new DriverException("Impossibel recuperar os dados atraves desse Driver: " + e.getMessage());
+        }
     }
 
     @Override

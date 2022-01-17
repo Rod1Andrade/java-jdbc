@@ -4,6 +4,8 @@ import core.entities.Department;
 import core.repositories.DepartmentRepository;
 import core.usecases.GetAllDepartmentUsecase;
 import core.usecases.GetAllDepartmentUsecaseImpl;
+import core.usecases.GetDepartmentByIdUsecase;
+import core.usecases.GetDepartmentByIdUsecaseImpl;
 import external.drivers.DepartmentDBDriver;
 import infra.drivers.DepartmentDriver;
 import infra.repositories.DepartmentRepositoryImpl;
@@ -31,5 +33,13 @@ public class DepartmentFacade {
         GetAllDepartmentUsecase usecase = new GetAllDepartmentUsecaseImpl(repository);
 
         return usecase.apply();
+    }
+
+    public Department getDeparmentById(int id) {
+        DepartmentDriver driver = new DepartmentDBDriver(connection);
+        DepartmentRepository repository = new DepartmentRepositoryImpl(driver);
+        GetDepartmentByIdUsecase usecase = new GetDepartmentByIdUsecaseImpl(repository);
+
+        return usecase.apply(id);
     }
 }
