@@ -18,4 +18,8 @@ public class DepartmentModel extends Department {
     public static DepartmentModel cast(Department department) {
         return new DepartmentModel(department.getName());
     }
+
+    public static Department upperCast(DepartmentModel departmentModel) {
+        return new Department(departmentModel.getId(), departmentModel.getName());
+    }
 }

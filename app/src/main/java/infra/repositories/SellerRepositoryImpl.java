@@ -5,6 +5,9 @@ import core.repositories.SellerRepository;
 import infra.drivers.SellerDriver;
 import infra.models.SellerModel;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class SellerRepositoryImpl implements SellerRepository {
     private final SellerDriver driver;
 
@@ -15,5 +18,28 @@ public class SellerRepositoryImpl implements SellerRepository {
     @Override
     public int save(Seller seller) {
         return driver.save(SellerModel.cast(seller));
+    }
+
+    @Override
+    public List<Seller> getAll() {
+        return driver.getAll()
+                .stream()
+                .map(SellerModel::upperCast)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public Seller getById(int id) {
+        return null;
+    }
+
+    @Override
+    public void deleteById(int id) {
+
+    }
+
+    @Override
+    public void delete(Seller seller) {
+
     }
 }

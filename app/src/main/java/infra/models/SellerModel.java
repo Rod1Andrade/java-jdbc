@@ -24,4 +24,15 @@ public class SellerModel extends Seller {
                 seller.getDepartment()
         );
     }
+
+    public static Seller upperCast(SellerModel sellerModel) {
+        return new Seller(
+                sellerModel.getId(),
+                sellerModel.getName(),
+                sellerModel.getName(),
+                sellerModel.getBirthDate(),
+                sellerModel.getBaseSalary(),
+                sellerModel.getDepartment()
+        );
+    }
 }

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE - SellerDBDriver implemented all interface contracts.">
+    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE - DepartmentDBDriver implemented all interface contracts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/external/drivers/DepartmentDBDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/drivers/DepartmentDBDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/repositories/SellerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/repositories/SellerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infra/models/SellerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/models/SellerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infra/repositories/SellerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/repositories/SellerRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642415441479</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="REFACTORING/CODE-STYLE - DepartmentDBDriver refactoring return way">
+      <created>1642415558615</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642415558615</updated>
+    </task>
+    <task id="LOCAL-00005" summary="UPDATE - DepartmentDBDriver implemented all interface contracts">
+      <created>1642415715115</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642415715115</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +145,8 @@
     <MESSAGE value="UPDATE - Drivers Interfaces" />
     <MESSAGE value="UPDATE - Save Department" />
     <MESSAGE value="UPDATE - SellerDBDriver implemented all interface contracts." />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - SellerDBDriver implemented all interface contracts." />
+    <MESSAGE value="REFACTORING/CODE-STYLE - DepartmentDBDriver refactoring return way" />
+    <MESSAGE value="UPDATE - DepartmentDBDriver implemented all interface contracts" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - DepartmentDBDriver implemented all interface contracts" />
   </component>
 </project>

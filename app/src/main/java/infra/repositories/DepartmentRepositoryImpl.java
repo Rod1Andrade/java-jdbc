@@ -19,7 +19,7 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
     public List<Department> getAll() {
         return driver.getAll()
                 .stream()
-                .map(model -> new Department(model.getId(), model.getName()))
+                .map(DepartmentModel::upperCast)
                 .collect(Collectors.toList());
     }
 
@@ -31,5 +31,15 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
     @Override
     public int save(Department department) {
         return driver.save(DepartmentModel.cast(department));
+    }
+
+    @Override
+    public void deleteById(int id) {
+        driver.deleteById(id);
+    }
+
+    @Override
+    public void delete(Department department) {
+        driver.delete(DepartmentModel.cast(department));
     }
 }
