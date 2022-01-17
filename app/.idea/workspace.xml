@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE - Save Department">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/CreateDepartmentUsecase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/CreateDepartmentUsecaseImpl.java" afterDir="false" />
+    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE - SellerDBDriver implemented all interface contracts.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/entities/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/repositories/DepartmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/external/drivers/DepartmentDBDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/drivers/DepartmentDBDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/models/DepartmentModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/repositories/DepartmentRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +93,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642384610847</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="UPDATE - Save Department">
+      <created>1642385841380</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642385841380</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UPDATE - SellerDBDriver implemented all interface contracts.">
+      <created>1642415441478</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642415441479</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +125,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="UPDATE - Drivers Interfaces" />
     <MESSAGE value="UPDATE - Save Department" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - Save Department" />
+    <MESSAGE value="UPDATE - SellerDBDriver implemented all interface contracts." />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - SellerDBDriver implemented all interface contracts." />
   </component>
 </project>

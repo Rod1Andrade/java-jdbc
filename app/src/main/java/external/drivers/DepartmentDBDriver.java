@@ -59,7 +59,6 @@ public class DepartmentDBDriver implements DepartmentDriver {
     @Override
     public DepartmentModel getById(int id) {
         String sql = "SELECT * FROM public.department WHERE id = ?";
-        DepartmentModel departmentModel = null;
         try (
                 PreparedStatement pst = connection.prepareStatement(sql)
         ) {
@@ -67,9 +66,9 @@ public class DepartmentDBDriver implements DepartmentDriver {
             ResultSet rs = pst.executeQuery();
 
             if (rs.next())
-                departmentModel = new DepartmentModel(rs.getInt("id"), rs.getString("name"));
+                return new DepartmentModel(rs.getInt("id"), rs.getString("name"));
 
-            return departmentModel;
+            return null;
         } catch (SQLException e) {
             throw new DriverException("Impossibel recuperar os dados atraves desse Driver: " + e.getMessage());
         }
