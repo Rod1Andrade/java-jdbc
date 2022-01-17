@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE -Department, Seller repositories contracts and implementation.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerByIdUsecase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerByIdUsecaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerUsecase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/DeleteSellerUsecaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetAllSellerUsecase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetAllSellerUsecaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetSellerByIdUsecase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/usecases/GetSellerByIdUsecaseImpl.java" afterDir="false" />
+    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE/REFACTORING - Department, Seller package update, use cases.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/core/usecases/seller/CreateSellerUsecaseImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/repositories/SellerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/repositories/SellerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +28,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,6 +59,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="ReaderModeSettings">
@@ -69,6 +69,12 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="infra.models" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="core.usecases.seller" />
     </key>
   </component>
   <component name="RunManager">
@@ -136,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642416283623</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UPDATE/REFACTORING - Department, Seller package update, use cases.">
+      <created>1642416782313</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642416782313</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +171,7 @@
     <MESSAGE value="REFACTORING/CODE-STYLE - DepartmentDBDriver refactoring return way" />
     <MESSAGE value="UPDATE - DepartmentDBDriver implemented all interface contracts" />
     <MESSAGE value="UPDATE -Department, Seller repositories contracts and implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE -Department, Seller repositories contracts and implementation." />
+    <MESSAGE value="UPDATE/REFACTORING - Department, Seller package update, use cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE/REFACTORING - Department, Seller package update, use cases." />
   </component>
 </project>
