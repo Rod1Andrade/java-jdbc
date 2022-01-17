@@ -76,11 +76,17 @@ public class DepartmentDBDriver implements DepartmentDriver {
 
     @Override
     public void deleteById(int id) {
-
+        String sql = "delete from public.department " +
+                "where id = ?";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new DriverException("Impossível deletar o department: " + e.getMessage());
+        }
     }
 
     @Override
     public void delete(DepartmentModel departmentModel) {
-
+        deleteById(departmentModel.getId());
     }
 }
