@@ -2,9 +2,11 @@ package external.drivers;
 
 import external.exceptions.DriverException;
 import infra.drivers.SellerDriver;
+import infra.models.DepartmentModel;
 import infra.models.SellerModel;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SellerDBDriver implements SellerDriver {
@@ -40,21 +42,87 @@ public class SellerDBDriver implements SellerDriver {
 
     @Override
     public List<SellerModel> getAll() {
-        return null;
+        String sql = "select s.*, d.\"name\" as departmentName from public.seller s " +
+                "inner join public.department d" +
+                "on s.departmentid  = d.id";
+
+        List<SellerModel> sellerModels = new ArrayList<>();
+
+        try (
+                PreparedStatement pst = connection.prepareStatement(sql);
+                ResultSet rs = pst.executeQuery()
+        ) {
+
+            while (rs.next()) {
+                DepartmentModel departmentModel = new DepartmentModel(
+                        rs.getInt("departmentId"), rs.getString("departmentName")
+                );
+
+                SellerModel sellerModel = new SellerModel(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("email"),
+                        rs.getDate("birthDate"),
+                        rs.getDouble("basseSalary"),
+                        departmentModel
+                );
+
+                sellerModels.add(sellerModel);
+            }
+
+            return sellerModels;
+        } catch (SQLException e) {
+            throw new DriverException("Impossível recuperar todos Sellers: " + e.getMessage());
+        }
     }
 
     @Override
     public SellerModel getById(int id) {
-        return null;
+        String sql = "select s.*, d.\"name\" as departmentName from public.seller s " +
+                "inner join public.department d" +
+                "on s.departmentid  = d.id" +
+                "where s.id = ?";
+
+
+        try (
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                ResultSet rs = preparedStatement.executeQuery()
+        ) {
+            if (rs.next()) {
+                DepartmentModel departmentModel = new DepartmentModel(
+                        rs.getInt("departmentId"), rs.getString("departmentName")
+                );
+
+                return new SellerModel(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("email"),
+                        rs.getDate("birthDate"),
+                        rs.getDouble("basseSalary"),
+                        departmentModel
+                );
+            }
+
+            return null;
+        } catch (SQLException e) {
+            throw new DriverException("Impossível recuperar seller por id: " + e.getMessage());
+        }
     }
 
     @Override
     public void deleteById(int id) {
+        String sql = "delete from public.seller " +
+                "where id = ?";
 
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new DriverException("Impossível deletar o seller: " + e.getMessage());
+        }
     }
 
     @Override
     public void delete(SellerModel sellerModel) {
-
+        deleteById(sellerModel.getId());
     }
 }
