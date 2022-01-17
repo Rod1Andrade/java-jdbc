@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class GetSellerByIdUsecaseImplTest {
 
     @Test
-    public void getSellerByIdTest() {
+    public void shouldGetSellerByIdTest() {
         Seller seller = new Seller();
         SellerRepository repository = Mockito.mock(SellerRepository.class);
         Mockito.when(repository.getById(Mockito.anyInt())).thenReturn(seller);

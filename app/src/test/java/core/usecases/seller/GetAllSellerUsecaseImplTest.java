@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class GetAllSellerUsecaseImplTest {
 
     @Test
-    public void getAllSellerTest() {
+    public void shouldGetAllSellerTest() {
         List<Seller> sellers = new ArrayList<>();
         SellerRepository repository = Mockito.mock(SellerRepository.class);
         Mockito.when(repository.getAll()).thenReturn(sellers);

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE/TEST - Get all sellers">
-      <change afterPath="$PROJECT_DIR$/src/test/java/core/usecases/seller/GetSellerByIdUsecaseImplTest.java" afterDir="false" />
+    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE/TEST - test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/usecases/seller/CreateSellerUsecaseImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/usecases/seller/CreateSellerUsecaseImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/usecases/seller/DeleteSellerByIdUsecaseImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/usecases/seller/DeleteSellerByIdUsecaseImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/usecases/seller/DeleteSellerUsecaseImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/usecases/seller/DeleteSellerUsecaseImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/usecases/seller/GetAllSellerUsecaseImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/usecases/seller/GetAllSellerUsecaseImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/usecases/seller/GetSellerByIdUsecaseImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/usecases/seller/GetSellerByIdUsecaseImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +86,7 @@
       <recent name="core.usecases.seller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GetAllSellerUsecaseImplTest.getAllSellerTest">
+  <component name="RunManager" selected="Gradle.GetSellerByIdUsecaseImplTest.getSellerByIdTest">
     <configuration name="DeleteSellerByIdUsecaseImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -97,29 +101,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;core.usecases.seller.DeleteSellerByIdUsecaseImplTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DeleteSellerByIdUsecaseImplTest.createSellerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;core.usecases.seller.DeleteSellerByIdUsecaseImplTest.createSellerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,13 +179,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GetSellerByIdUsecaseImplTest.getSellerByIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;core.usecases.seller.GetSellerByIdUsecaseImplTest.getSellerByIdTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GetSellerByIdUsecaseImplTest.getSellerByIdTest" />
         <item itemvalue="Gradle.GetAllSellerUsecaseImplTest.getAllSellerTest" />
         <item itemvalue="Gradle.DeleteSellerUsecaseImplTest.deleteSeller" />
         <item itemvalue="Gradle.DeleteSellerByIdUsecaseImplTest.deleteSellerById" />
         <item itemvalue="Gradle.DeleteSellerByIdUsecaseImplTest" />
-        <item itemvalue="Gradle.DeleteSellerByIdUsecaseImplTest.createSellerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642419677199</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UPDATE/TEST - Get seller by id">
+      <created>1642419856987</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1642419856987</updated>
+    </task>
+    <task id="LOCAL-00014" summary="UPDATE/TEST - test">
+      <created>1642419865533</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642419865533</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,6 +347,8 @@
     <MESSAGE value="UPDATE/TEST - Delete seller." />
     <MESSAGE value="UPDATE/TEST - Delete seller by reference." />
     <MESSAGE value="UPDATE/TEST - Get all sellers" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE/TEST - Get all sellers" />
+    <MESSAGE value="UPDATE/TEST - Get seller by id" />
+    <MESSAGE value="UPDATE/TEST - test" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE/TEST - test" />
   </component>
 </project>

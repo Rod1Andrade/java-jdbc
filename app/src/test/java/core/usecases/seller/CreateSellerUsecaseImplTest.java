@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CreateSellerUsecaseImplTest {
 
     @Test
-    void createSellerTest() {
+    void shouldCreateSellerTest() {
         SellerRepository repository = Mockito.mock(SellerRepository.class);
 
         Mockito.when(repository.save(Mockito.any())).thenReturn(1);
