@@ -30,16 +30,16 @@ public class SellerRepositoryImpl implements SellerRepository {
 
     @Override
     public Seller getById(int id) {
-        return null;
+        return driver.getById(id);
     }
 
     @Override
     public void deleteById(int id) {
-
+        driver.deleteById(id);
     }
 
     @Override
     public void delete(Seller seller) {
-
+        driver.delete(SellerModel.cast(seller));
     }
 }
