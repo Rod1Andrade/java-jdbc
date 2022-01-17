@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="RENAME/TEST - rename all tests to initialize with should world.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/infra/repositories/SellerRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="3fc15b7b-a224-4527-bf36-570d38f8f87f" name="Changes" comment="UPDATE/TEST - test all methods from repository.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/core.usecases.seller.GetSellerByIdUsecaseImplTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/core.usecases.seller.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-core.usecases.seller.GetSellerByIdUsecaseImplTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/repositories/SellerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/repositories/SellerRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,30 +82,7 @@
       <recent name="core.usecases.seller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SellerRepositoryImplTest.shouldDeleteSellerById">
-    <configuration name="GetSellerByIdUsecaseImplTest.getSellerByIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;core.usecases.seller.GetSellerByIdUsecaseImplTest.getSellerByIdTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.SellerRepositoryImplTest.shouldDeleteSellerByReference">
     <configuration name="SellerRepositoryImplTest.shouldDeleteSellerById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -135,6 +97,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;infra.repositories.SellerRepositoryImplTest.shouldDeleteSellerById&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SellerRepositoryImplTest.shouldDeleteSellerByReference" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;infra.repositories.SellerRepositoryImplTest.shouldDeleteSellerByReference&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SellerRepositoryImplTest.shouldDeleteSellerByReference" />
         <item itemvalue="Gradle.SellerRepositoryImplTest.shouldDeleteSellerById" />
         <item itemvalue="Gradle.SellerRepositoryImplTest.shouldGetSellerById" />
         <item itemvalue="Gradle.SellerRepositoryImplTest.shouldGetAllSellers" />
         <item itemvalue="Gradle.SellerRepositoryImplTest.shouldSaveASellerTest" />
-        <item itemvalue="Gradle.GetSellerByIdUsecaseImplTest.getSellerByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642419945746</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="UPDATE/TEST - test all methods from repository.">
+      <created>1642426842557</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1642426842557</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,6 +360,7 @@
     <MESSAGE value="UPDATE/TEST - Get seller by id" />
     <MESSAGE value="UPDATE/TEST - test" />
     <MESSAGE value="RENAME/TEST - rename all tests to initialize with should world." />
-    <option name="LAST_COMMIT_MESSAGE" value="RENAME/TEST - rename all tests to initialize with should world." />
+    <MESSAGE value="UPDATE/TEST - test all methods from repository." />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE/TEST - test all methods from repository." />
   </component>
 </project>
